@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent | À propos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (identique sur toutes les pages) -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <span class="text-primary">Afri</span>Talent
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3 gap-2">
+                    <button id="theme-toggle" class="btn btn-outline-secondary rounded-circle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <a href="contact.html" class="btn btn-primary">Rejoindre AfriTalent</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO À PROPOS -->
+    <section class="pt-5 pb-4 bg-light text-center" style="margin-top: 80px;">
+        <div class="container">
+            <h1 class="display-5 fw-bold" style="font-family: 'Space Grotesk', sans-serif;">À propos d’AfriTalent</h1>
+            <p class="lead text-muted">La plateforme qui fait grandir le talent tech africain depuis 2024</p>
+        </div>
+    </section>
+
+    <!-- NOTRE HISTOIRE -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Notre histoire</h2>
+                    <p class="lead">AfriTalent est née d’un constat simple : l’Afrique regorge de talents tech exceptionnels, mais ils manquent souvent de visibilité et d’opportunités à la hauteur de leur potentiel.</p>
+                    <p>Créée à Dakar en 2024 par une équipe de jeunes entrepreneurs et développeurs, la plateforme a pour mission de connecter les meilleurs freelances africains aux entreprises locales et internationales qui cherchent du talent fiable, créatif et culturellement adapté.</p>
+                    <p>Aujourd’hui, plus de 2 500 freelances et 800 entreprises font confiance à AfriTalent pour leurs projets tech les plus ambitieux.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://picsum.photos/id/1015/800/600" class="img-fluid rounded-4 shadow" alt="Équipe AfriTalent à Dakar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- L'ÉQUIPE -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre équipe</h2>
+            <div class="row g-4">
+
+                <!-- Membre 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="https://picsum.photos/id/64/400/400" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Robert Diassé">
+                        <div class="card-body">
+                            <h5 class="card-title">Robert DIASSÉ</h5>
+                            <p class="text-primary">Fondateur &amp; CEO</p>
+                            <p class="card-text small">Ingénieur logiciel passionné par l’écosystème tech africain.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-twitter fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membre 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="https://picsum.photos/id/201/400/400" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Aminata Sow">
+                        <div class="card-body">
+                            <h5 class="card-title">Aminata SOW</h5>
+                            <p class="text-primary">CTO &amp; Lead Developer</p>
+                            <p class="card-text small">Spécialiste React &amp; Node.js, 7 ans d’expérience en fintech.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-twitter fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membre 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="https://picsum.photos/id/1005/400/400" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Moussa Traoré">
+                        <div class="card-body">
+                            <h5 class="card-title">Moussa TRAORÉ</h5>
+                            <p class="text-primary">Head of Product</p>
+                            <p class="card-text small">Designer produit et expert UX, ancien de Jumia.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-twitter fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membre 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <img src="https://picsum.photos/id/1009/400/400" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Fatou Ndiaye">
+                        <div class="card-body">
+                            <h5 class="card-title">Fatou NDIAYE</h5>
+                            <p class="text-primary">Community &amp; Growth Manager</p>
+                            <p class="card-text small">Responsable de la communauté freelances et partenariats.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+                            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-twitter fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOS VALEURS -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos valeurs</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="value-card p-4">
+                        <i class="bi bi-lightbulb-fill display-1 text-primary mb-3"></i>
+                        <h4>Innovation</h4>
+                        <p>Nous repoussons les limites du freelance tech en Afrique avec des outils modernes et créatifs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value-card p-4">
+                        <i class="bi bi-globe display-1 text-primary mb-3"></i>
+                        <h4>Accessibilité</h4>
+                        <p>Donner à chaque talent africain une chance égale de réussir, quel que soit son pays.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value-card p-4">
+                        <i class="bi bi-people-fill display-1 text-primary mb-3"></i>
+                        <h4>Communauté</h4>
+                        <p>Créer un réseau solidaire où freelances et entreprises grandissent ensemble.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="value-card p-4">
+                        <i class="bi bi-award-fill display-1 text-primary mb-3"></i>
+                        <h4>Excellence</h4>
+                        <p>Exiger la qualité et la fiabilité dans chaque mission réalisée sur la plateforme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHIFFRES CLÉS (Bento Grid avec compteurs animés) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">AfriTalent en chiffres</h2>
+            <div class="bento-grid">
+                <div class="bento-card" style="grid-area: a;">
+                    <h3 class="counter" data-target="2500">0</h3>
+                    <p class="fs-5">Freelances inscrits</p>
+                </div>
+                <div class="bento-card" style="grid-area: b;">
+                    <h3 class="counter" data-target="800">0</h3>
+                    <p class="fs-5">Entreprises partenaires</p>
+                </div>
+                <div class="bento-card" style="grid-area: c;">
+                    <h3 class="counter" data-target="12000">0</h3>
+                    <p class="fs-5">Missions réalisées</p>
+                </div>
+                <div class="bento-card" style="grid-area: d;">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p class="fs-5">Pays représentés</p>
+                </div>
+                <div class="bento-card" style="grid-area: e;">
+                    <h3 class="counter" data-target="98">0</h3>
+                    <p class="fs-5">% de satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (identique sur toutes les pages) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>AfriTalent</h5>
+                    <p>La plateforme n°1 du freelance tech en Afrique.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Liens utiles</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="freelances.html" class="text-white text-decoration-none">Freelances</a></li>
+                        <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Ressources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://instagram.com/israel2.3" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">À propos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact</h6>
+                    <a href="mailto:agent210601@gmail.com">Mail US</a><br>
+                    <a href="callto:+2210080086">Call US</a>
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-linkedin fs-4"></i>
+                        <i class="bi bi-twitter fs-4"></i>
+                        <i class="bi bi-instagram fs-4"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; <span id="year"></span> AfriTalent By Agent23 — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4" style="display:none;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

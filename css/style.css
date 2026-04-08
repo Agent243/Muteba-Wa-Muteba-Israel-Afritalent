@@ -1,0 +1,169 @@
+/* ================================================
+
+   style.css - AfriTalent
+
+   Projet Semestre 2 - Groupe ISI
+
+   ================================================ */
+
+/* ====================== VARIABLES CSS ====================== */
+:root {
+    --primary-color: #00d4aa;
+    --secondary-color: #00a88a;
+    --accent-color: #ff6b00;
+    --text-color: #222222;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --dark-text: #eeeeee;
+    --dark-bg: #121212;
+    --border-radius: 16px;
+    --transition: all 0.3s ease;
+}
+
+/* ====================== RESET & BASE ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* ====================== DARK MODE (CORRIGÉ) ====================== */
+.dark-mode {
+    --text-color: #eeeeee;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+}
+
+.dark-mode body,
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode .card-title,
+.dark-mode .card-text,
+.dark-mode .lead,
+.dark-mode .nav-link,
+.dark-mode .text-muted,
+.dark-mode .accordion-body,
+.dark-mode .list-unstyled li,
+.dark-mode .form-label {
+    color: var(--dark-text) !important;
+}
+
+/* Fond des sections claires en mode dark */
+.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+/* Cartes */
+.dark-mode .card,
+.dark-mode .bento-card,
+.dark-mode .pricing-card {
+    background-color: var(--card-bg) !important;
+    color: var(--dark-text) !important;
+    border-color: #333 !important;
+}
+
+/* Navbar en mode dark */
+.dark-mode .navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+}
+
+/* Liens et boutons */
+.dark-mode .btn-outline-primary {
+    color: #00d4aa !important;
+    border-color: #00d4aa !important;
+}
+
+/* ====================== BENTO GRID ====================== */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-areas: 
+        "a a b"
+        "c d d";
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.bento-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 212, 170, 0.2);
+}
+
+/* ====================== AUTRES STYLES (inchangés) ====================== */
+.card {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 40px rgba(0, 212, 170, 0.25) !important;
+}
+
+.filter-btn {
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    box-shadow: 0 10px 25px rgba(0, 212, 170, 0.3);
+    transition: var(--transition);
+}
+
+#back-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-areas: "a" "b" "c" "d";
+    }
+}
